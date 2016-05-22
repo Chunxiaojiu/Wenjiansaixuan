@@ -1,0 +1,27 @@
+package com.example.ownView;
+
+import android.content.Context;
+import android.util.AttributeSet;
+import android.view.View;
+
+public class MySwitch extends View {
+
+	public MySwitch(Context context) {
+		super(context);
+		// TODO Auto-generated constructor stub
+	}
+	public MySwitch(Context context, AttributeSet attrs) {  
+        this(context, attrs, 0);  
+        // TODO Auto-generated constructor stub  
+    }  
+  
+    public MySwitch(Context context, AttributeSet attrs, int defStyle) {  
+        super(context, attrs, defStyle);  
+        // TODO Auto-generated constructor stub  
+        init();  
+    }
+    public void init() {
+		// TODO Auto-generated method stub
+		
+	}  
+}

@@ -1,0 +1,7 @@
+package com.example.adapter;
+
+import android.support.v7.widget.RecyclerView.Adapter;
+
+public class WenjianChiose extends Adapter<VH> {
+
+}

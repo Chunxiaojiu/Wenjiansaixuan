@@ -1,0 +1,45 @@
+package com.example.adapter;
+
+import com.example.zyin.R;
+
+import android.content.Context;
+import android.support.v7.widget.RecyclerView.Adapter;
+import android.support.v7.widget.RecyclerView.ViewHolder;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+public class WenjianChiose extends Adapter<WenjianChiose.MyChioseHolder> {
+	private Context context;
+
+	@Override
+	public int getItemCount() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public void onBindViewHolder(WenjianChiose arg0, int arg1) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public MyChioseHolder onCreateViewHolder(ViewGroup arg0, int arg1) {
+		// TODO Auto-generated method stub
+		MyChioseHolder mcholder = new MyChioseHolder(LayoutInflater.from(context).inflate(R.layout.dayin_item, arg0,false));
+	}
+
+	class MyChioseHolder extends ViewHolder {
+
+		public MyChioseHolder(View view) {
+			super(view);
+
+		}
+	}
+
+	@Override
+	public void onBindViewHolder(MyChioseHolder arg0, int arg1) {
+		// TODO Auto-generated method stub
+
+	}
+}

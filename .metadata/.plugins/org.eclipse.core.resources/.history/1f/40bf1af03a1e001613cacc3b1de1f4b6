@@ -1,0 +1,49 @@
+package com.example.zywenjian;
+
+public class WenjianChioseModel {
+	private boolean single;
+	private int number;
+	private boolean color;
+	private int oneforpaper;
+
+	public WenjianChioseModel(boolean single, int number, boolean color,
+			int oneforpaper) {
+		setColor(color);
+		setNumber(number);
+		setOneforpaper(oneforpaper);
+		setSingle(single);
+	}
+
+	public boolean isSingle() {
+		return single;
+	}
+
+	public void setSingle(boolean single) {
+		this.single = single;
+	}
+
+	public int getNumber() {
+		return number;
+	}
+
+	public void setNumber(int number) {
+		this.number = number;
+	}
+
+	public boolean isColor() {
+		return color;
+	}
+
+	public void setColor(boolean color) {
+		this.color = color;
+	}
+
+	public int getOneforpaper() {
+		return oneforpaper;
+	}
+
+	public void setOneforpaper(int oneforpaper) {
+		this.oneforpaper = oneforpaper;
+	}
+
+}

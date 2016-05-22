@@ -1,0 +1,41 @@
+package com.example.zyin;
+
+import android.app.Fragment;
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.view.ViewGroup;
+
+public class leftFragment extends Fragment {
+	FloatingActionButton actionButton;
+	boolean wenjian = false;
+
+	@Override
+	public View onCreateView(LayoutInflater inflater, ViewGroup container,
+			Bundle savedInstanceState) {
+		View root = inflater.inflate(R.layout.dayin, container, false);
+		actionButton = (FloatingActionButton) root.findViewById(R.id.flbton);
+		Bundle bundle = getArguments();
+		if (bundle != null) {
+			wenjian = getArguments().getBoolean("addwenjian");
+			if (wenjian) {
+				Log.i("new fra", "999999999999999999");
+			}
+		}
+		actionButton.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent();
+				intent.setClass(getActivity(), WenjianChiose.class);
+				startActivity(intent);
+			}
+		});
+
+		return root;
+	}
+}

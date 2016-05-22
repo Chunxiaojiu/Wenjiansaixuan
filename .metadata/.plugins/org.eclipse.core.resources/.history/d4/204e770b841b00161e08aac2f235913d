@@ -1,0 +1,7 @@
+package com.example.ownView;
+
+import android.view.View;
+
+public class MySwitch extends View {
+
+}

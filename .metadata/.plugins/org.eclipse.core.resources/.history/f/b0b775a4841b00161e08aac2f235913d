@@ -1,0 +1,14 @@
+package com.example.ownView;
+
+import android.content.Context;
+import android.view.View;
+
+public class MySwitch extends View {
+
+	public MySwitch(Context context) {
+		super(context);
+		// TODO Auto-generated constructor stub
+	}
+
+
+}

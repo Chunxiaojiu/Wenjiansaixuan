@@ -1,0 +1,51 @@
+package com.example.adapter;
+
+import com.example.zyin.R;
+
+import android.content.Context;
+import android.support.v7.widget.RecyclerView.Adapter;
+import android.support.v7.widget.RecyclerView.ViewHolder;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.CheckBox;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+public class WenjianChiose extends Adapter<WenjianChiose.MyChioseHolder> {
+	private Context context;
+	@Override
+	public int getItemCount() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	@Override
+	public MyChioseHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+		MyChioseHolder holder = new MyChioseHolder(LayoutInflater.from(context)
+				.inflate(R.layout.wenjian_item, parent, false));
+		return holder;
+	}
+	@Override
+	public void onBindViewHolder(WenjianChiose arg0, int arg1) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public WenjianChiose onCreateViewHolder(ViewGroup arg0, int arg1) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	class MyChioseHolder extends ViewHolder {
+		ImageView img;
+		TextView tv;
+		CheckBox cbx;
+
+		public MyChioseHolder(View view) {
+			super(view);
+			img = (ImageView) view.findViewById(R.id.img);
+			tv = (TextView) view.findViewById(R.id.wenjian);
+			cbx = (CheckBox) view.findViewById(R.id.checkBox1);
+		}
+	}
+}
